@@ -11,12 +11,12 @@ return [
     |--------------------------------------------------------------------------
     | Data for default admin user created when seeding initial database
     */
-    'admin_username' => env('ADMIN_USER_NAME', 'Sergi Tur Badenas'),
-    'admin_email'     => env('ADMIN_USER_EMAIL', 'sergiturbadenas@gmail.com'),
+    'admin_username' => env('ADMIN_USER_NAME', 'Superadmin'),
+    'admin_email'     => env('ADMIN_USER_EMAIL', 'jordivega@iesebre.com'),
     'admin_password'  => env('ADMIN_USER_PASSWORD'),
-    'admin_givenName' => env('ADMIN_USER_GIVEN_NAME', 'Sergi'),
-    'admin_sn1'  => env('ADMIN_USER_SN1', 'Tur'),
-    'admin_sn2'  => env('ADMIN_USER_SN2', 'Badenas'),
+    'admin_givenName' => env('ADMIN_USER_GIVEN_NAME', 'Superadmin'),
+    'admin_sn1'  => env('ADMIN_USER_SN1', 'Super'),
+    'admin_sn2'  => env('ADMIN_USER_SN2', 'Admin'),
 
     /*
     |--------------------------------------------------------------------------
@@ -25,7 +25,7 @@ return [
     | Start date participants could register to app.
     |
     */
-    'registration_start_date' => env('REGISTRATION_START_DATE', '2018-03-15 12:00:00'),
+    'registration_start_date' => env('REGISTRATION_START_DATE', '2025-03-15 12:00:00'),
 
     /*
     |--------------------------------------------------------------------------
@@ -46,6 +46,10 @@ return [
         [
             'name' => '2020',
             'deleted_at' => null
+        ],
+        [
+          'name' => '2025',
+          'deleted_at' => null
         ]
     ]),
 
@@ -56,7 +60,7 @@ return [
     | Anys/sessions de la lanparty
     |
     */
-    'session' => env('LANPARTY_SESSION_CURRENT_SESSION', '2020'),
+    'session' => env('LANPARTY_SESSION_CURRENT_SESSION', '2025'),
 
     /*
     |--------------------------------------------------------------------------
@@ -65,6 +69,6 @@ return [
     | Preus (en centims d'euro)
     |
     */
-    'inscription_price' => env('LANPARTY_INSCRIPTION_PRICE', 300),
+    'inscription_price' => env('LANPARTY_INSCRIPTION_PRICE', 500),
     'event_inscription_price' => env('LANPARTY_EVENT_INSCRIPTION_PRICE', 100)
 ];

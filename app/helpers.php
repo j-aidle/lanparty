@@ -20,81 +20,112 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
 
 if (!function_exists('initialize_partners')) {
-    function initialize_partners()
+    function initialize_partners($session = null)
     {
+        if (is_null($session)) $session = config('lanparty.session');
         Partner::firstOrCreate([
             'name' => 'Ajuntament de Tortosa',
-            'category' => 'Or'
+            'category' => 'Or',
+            'session' => $session,
+            'avatar' => '/img/logos/Ajuntament.jpg'
         ]);
 
         Partner::firstOrCreate([
             'name' => 'Beep',
-            'category' => 'Or'
+            'category' => 'Or',
+            'session' => $session,
+            'avatar' => '/img/logos/BEEP.jpg'
         ]);
 
         Partner::firstOrCreate([
             'name' => 'The Workshop',
-            'category' => 'Or'
+            'category' => 'Or',
+            'session' => $session,
+            'avatar' => '/img/logos/TheWorkshop.jpg'
         ]);
 
         Partner::firstOrCreate([
             'name' => 'PC Serveis',
-            'category' => 'Plata'
+            'category' => 'Plata',
+            'session' => $session,
+            'avatar' => '/img/logos/PCServeis.jpg'
         ]);
 
         Partner::firstOrCreate([
             'name' => 'DISI',
-            'category' => 'Plata'
+            'category' => 'Plata',
+            'session' => $session,
+            'avatar' => '/img/logos/Disi.jpg'
         ]);
 
         Partner::firstOrCreate([
             'name' => 'AGI',
-            'category' => 'Plata'
+            'category' => 'Plata',
+            'session' => $session,
+            'avatar' => '/img/logos/AGI.jpg'
         ]);
 
         Partner::firstOrCreate([
             'name' => 'EPorts',
-            'category' => 'Plata'
+            'category' => 'Plata',
+            'session' => $session,
+            'avatar' => '/img/logos/ePorts.jpg'
         ]);
 
         Partner::firstOrCreate([
             'name' => 'SecurityPla',
-            'category' => 'Plata'
+            'category' => 'Plata',
+            'session' => $session,
+            'avatar' => '/img/logos/SecurityPla.jpg'
         ]);
 
         Partner::firstOrCreate([
             'name' => 'Altercom 21',
-            'category' => 'Bronze'
+            'category' => 'Bronze',
+            'session' => $session,
+            'avatar' => '/img/logos/Altercom.jpg'
         ]);
 
         Partner::firstOrCreate([
             'name' => 'Globals',
-            'category' => 'Bronze'
+            'category' => 'Bronze',
+            'session' => $session,
+            'avatar' => '/img/logos/Globals.jpg'
         ]);
 
         Partner::firstOrCreate([
             'name' => 'Ferreteria Garcia',
-            'category' => 'Bronze'
+            'category' => 'Bronze',
+            'session' => $session,
+            'avatar' => '/img/logos/FerreteriaGarcia.png'
         ]);
 
         Partner::firstOrCreate([
             'name' => 'Jabil',
-            'category' => 'Bronze'
+            'category' => 'Bronze',
+            'session' => $session,
+            'avatar' => '/img/logos/Jabil.jpg'
         ]);
 
         Partner::firstOrCreate([
             'name' => 'Querol',
-            'category' => 'Bronze'
+            'category' => 'Bronze',
+            'session' => $session,
+            'avatar' => '/img/logos/Querol.jpg'
         ]);
 
         Partner::firstOrCreate([
             'name' => 'Electrotic',
-            'category' => 'Bronze'
+            'category' => 'Bronze',
+            'session' => $session,
+            'avatar' => '/img/logos/Electrotic.jpg'
         ]);
 
         Partner::firstOrCreate([
             'name' => "Departament d'informàtica",
-            'category' => 'Or'
+            'category' => 'Or',
+            'session' => $session,
+            'avatar' => '/img/logos/DepartamentInformatica.jpg'
         ]);
 
     }
@@ -464,73 +495,92 @@ if (!function_exists('create_events')) {
               'tickets' => 10, // Número de grups,
               'participants_number' => 5,
               'regulation' => 'https://docs.google.com/document/d/1lO-twh_U-wGS7jNQJu_B6yhqq-E5RbQacOX-3AiRZmA/edit',
-              'published_at' => '2018-01-15 12:00:00'
+              'published_at' => '2025-01-01 12:00:00'
             ],
             [
-                'name' => 'Overwatch',
-                'inscription_type' => 'group',
-                'image' => '/img/Overwatch.jpeg',
-                'tickets' => 10, // Número de grups
-                'participants_number' => 6,
-                'regulation' => 'https://docs.google.com/document/d/1OlM3ZcxyxiIz51R_tYeYiA1-lfiK-lyG-tMhRm8DHSk/edit',
-                'published_at' => '2018-01-15 12:00:00'
+              'name' => 'Valorant',
+              'inscription_type' => 'group',
+              'image' => '/img/Valorant.png',
+              'tickets' => 10, // Número de grups,
+              'participants_number' => 5,
+              'regulation' => 'https://docs.google.com/document/d/1lO-twh_U-wGS7jNQJu_B6yhqq-E5RbQacOX-3AiRZmA/edit',
+              'published_at' => '2025-01-01 12:00:00'
             ],
             [
-                'name' => 'Counter Strike',
-                'inscription_type' => 'group',
-                'image' => '/img/CounterStrike.jpeg',
-                'tickets' => 10, // Número d'usuaris es poden inscriure
-                'participants_number' => 3,
-                'regulation' => 'https://docs.google.com/document/d/1ZMUBSAYHz79JSWkbv9Ra0HLfO2WGJHkLW6xDYHa4Pks/edit',
-                'published_at' => '2018-01-15 12:00:00',
+              'name' => 'Counter Strike',
+              'inscription_type' => 'group',
+              'image' => '/img/CounterStrike.jpeg',
+              'tickets' => 10, // Número d'usuaris es poden inscriure
+              'participants_number' => 5,
+              'regulation' => 'https://docs.google.com/document/d/1ZMUBSAYHz79JSWkbv9Ra0HLfO2WGJHkLW6xDYHa4Pks/edit',
+              'published_at' => '2025-01-01 12:00:00',
 
             ],
             [
-                'name' => 'Age Of empires',
-                'inscription_type' => 'individual',
-                'image' => '/img/AgeOfEmpires2.png',
-                'tickets' => 15, // Número d'usuaris es poden inscriure
-                'regulation' => 'https://docs.google.com/document/d/1YDxnnqIt_Wixy5itQoHWT5-n37G5-I2TY0oHzdPscWM/edit',
-                'participants_number' => null,
-                'published_at' => '2018-01-15 12:00:00',
+              'name' => 'Fortnite',
+              'inscription_type' => 'group',
+              'image' => '/img/Fortnite.png',
+              'tickets' => 200, // Número d'usuaris es poden inscriure
+              'participants_number' => 1,
+              'regulation' => 'https://docs.google.com/document/d/1OlM3ZcxyxiIz51R_tYeYiA1-lfiK-lyG-tMhRm8DHSk/edit',
+              'published_at' => '2025-01-01 12:00:00'
             ],
-            [
-                'name' => 'Muntatge equips ESBORRANY',
-                'inscription_type' => 'individual',
-                'image' => '/img/Fifa18.jpeg',
-                'tickets' => 15, // Número d'usuaris es poden inscriure
-                'regulation' => 'https://docs.google.com/document/d/15M_Acf3hBp0E7k2bCB8LwJV1ZZuiXx0B_w4SEZtY5DA/edit',
-                'participants_number' => null,
-                'published_at' => null
-            ],
-            [
-                'name' => 'FIFA 18',
-                'inscription_type' => 'individual',
-                'image' => '/img/Fifa18.jpeg',
-                'tickets' => 15, // Número d'usuaris es poden inscriure
-                'regulation' => 'https://docs.google.com/document/d/1YDxnnqIt_Wixy5itQoHWT5-n37G5-I2TY0oHzdPscWM/edit',
-                'participants_number' => null,
-                'published_at' => null,
-            ],
-            [
-                'name' => 'Capture The Flag',
-                'inscription_type' => 'group',
-                'image' => '/img/CaptureTheFlag.jpeg',
-                'tickets' => 20, // Número d'usuaris es poden inscriure
-                'regulation' => 'https://docs.google.com/document/d/1YDxnnqIt_Wixy5itQoHWT5-n37G5-I2TY0oHzdPscWM/edit',
-                'participants_number' => 3,
-                'published_at' => '2019-04-27 12:00:00',
-            ],
-            [
-                'name' => 'Event archivat',
-                'inscription_type' => 'individual',
-                'image' => '/img/Fifa18.jpeg',
-                'tickets' => 20, // Número d'usuaris es poden inscriure
-                'regulation' => 'https://docs.google.com/document/d/1YDxnnqIt_Wixy5itQoHWT5-n37G5-I2TY0oHzdPscWM/edit',
-                'participants_number' => null,
-                'published_at' => '2018-01-15 12:00:00',
-                'deleted_at' => '2018-01-13 12:00:00',
-            ]
+            // [
+            //     'name' => 'Overwatch',
+            //     'inscription_type' => 'group',
+            //     'image' => '/img/Overwatch.jpeg',
+            //     'tickets' => 10, // Número de grups
+            //     'participants_number' => 6,
+            //     'regulation' => 'https://docs.google.com/document/d/1OlM3ZcxyxiIz51R_tYeYiA1-lfiK-lyG-tMhRm8DHSk/edit',
+            //     'published_at' => '2018-01-15 12:00:00'
+            // ],
+            // [
+            //     'name' => 'Age Of empires',
+            //     'inscription_type' => 'individual',
+            //     'image' => '/img/AgeOfEmpires2.png',
+            //     'tickets' => 15, // Número d'usuaris es poden inscriure
+            //     'regulation' => 'https://docs.google.com/document/d/1YDxnnqIt_Wixy5itQoHWT5-n37G5-I2TY0oHzdPscWM/edit',
+            //     'participants_number' => null,
+            //     'published_at' => '2018-01-15 12:00:00',
+            // ],
+            // [
+            //     'name' => 'Muntatge equips ESBORRANY',
+            //     'inscription_type' => 'individual',
+            //     'image' => '/img/Fifa18.jpeg',
+            //     'tickets' => 15, // Número d'usuaris es poden inscriure
+            //     'regulation' => 'https://docs.google.com/document/d/15M_Acf3hBp0E7k2bCB8LwJV1ZZuiXx0B_w4SEZtY5DA/edit',
+            //     'participants_number' => null,
+            //     'published_at' => null
+            // ],
+            // [
+            //     'name' => 'FIFA 18',
+            //     'inscription_type' => 'individual',
+            //     'image' => '/img/Fifa18.jpeg',
+            //     'tickets' => 15, // Número d'usuaris es poden inscriure
+            //     'regulation' => 'https://docs.google.com/document/d/1YDxnnqIt_Wixy5itQoHWT5-n37G5-I2TY0oHzdPscWM/edit',
+            //     'participants_number' => null,
+            //     'published_at' => null,
+            // ],
+            // [
+            //     'name' => 'Capture The Flag',
+            //     'inscription_type' => 'group',
+            //     'image' => '/img/CaptureTheFlag.jpeg',
+            //     'tickets' => 20, // Número d'usuaris es poden inscriure
+            //     'regulation' => 'https://docs.google.com/document/d/1YDxnnqIt_Wixy5itQoHWT5-n37G5-I2TY0oHzdPscWM/edit',
+            //     'participants_number' => 3,
+            //     'published_at' => '2019-04-27 12:00:00',
+            // ],
+            // [
+            //     'name' => 'Event archivat',
+            //     'inscription_type' => 'individual',
+            //     'image' => '/img/Fifa18.jpeg',
+            //     'tickets' => 20, // Número d'usuaris es poden inscriure
+            //     'regulation' => 'https://docs.google.com/document/d/1YDxnnqIt_Wixy5itQoHWT5-n37G5-I2TY0oHzdPscWM/edit',
+            //     'participants_number' => null,
+            //     'published_at' => '2018-01-15 12:00:00',
+            //     'deleted_at' => '2018-01-13 12:00:00',
+            // ],
+
         ];
 
         foreach ($events as $event) {

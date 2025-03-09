@@ -23,7 +23,7 @@ class WelcomeController extends Controller
     public function index()
     {
         $prizes = Prize::with(['partner'])->where('session', config('lanparty.session') )->get();
-        $partners = Partner::with('prizes')->where('session', config('lanparty.session') )->get();
+        $partners = Partner::with(['prizes'])->where('session', config('lanparty.session') )->get();
         return view('welcome',[
            'prizes' => $prizes,
            'partners' => $partners,

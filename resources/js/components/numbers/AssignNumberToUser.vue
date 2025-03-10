@@ -30,7 +30,7 @@
 <script>
 import * as actions from '../../store/action-types'
 import * as mutations from '../../store/mutation-types'
-import { mapGetters } from 'vuex'
+import { mapGetters } from 'pinia'
 import sleep from '../../utils/sleep'
 
 export default {

@@ -223,12 +223,12 @@ class PartnersControllerTest extends TestCase
     $this->assertEquals('Ajuntament de Tortosa',$result[0]->name);
     $this->assertEquals('2019',$result[0]->session);
     $this->assertEquals(null,$result[0]->category);
-    $this->assertEquals('/img/logos/Ajuntament.jpg',$result[0]->avatar);
+    $this->assertEquals('public/img/logos/Ajuntament.jpg',$result[0]->avatar);
 
     $this->assertEquals('Dep. Informatica Institut de l\'Ebre',$result[1]->name);
     $this->assertEquals('2019',$result[1]->session);
     $this->assertEquals(null,$result[1]->category);
-    $this->assertEquals('/img/logos/iesEbre.jpg',$result[1]->avatar);
+    $this->assertEquals('public/img/logos/iesEbre.jpg',$result[1]->avatar);
 
   }
 
@@ -249,12 +249,12 @@ class PartnersControllerTest extends TestCase
     $this->assertEquals('Ajuntament de Tortosa',$result[0]->name);
     $this->assertEquals('2019',$result[0]->session);
     $this->assertEquals(null,$result[0]->category);
-    $this->assertEquals('/img/logos/Ajuntament.jpg',$result[0]->avatar);
+    $this->assertEquals('public/img/logos/Ajuntament.jpg',$result[0]->avatar);
 
     $this->assertEquals('Dep. Informatica Institut de l\'Ebre',$result[1]->name);
     $this->assertEquals('2019',$result[1]->session);
     $this->assertEquals(null,$result[1]->category);
-    $this->assertEquals('/img/logos/iesEbre.jpg',$result[1]->avatar);
+    $this->assertEquals('public/img/logos/iesEbre.jpg',$result[1]->avatar);
 
 
 

@@ -66,12 +66,11 @@
 <script>
 import * as actions from '../store/action-types'
 import sleep from '../utils/sleep'
-import { validationMixin } from 'vuelidate'
-import { required, sameAs, email, minLength } from 'vuelidate/lib/validators'
+import useVuelidate from '@vuelidate/core'; // Assegura't d'importar des de @vuelidate/core
+import { required, sameAs, email, minLength } from '@vuelidate/validators';
 
 export default {
   name: 'ResetPasswordDialog',
-  mixins: [validationMixin],
   validations: {
     internalEmail: { required, email },
     password: { required, minLength: minLength(8) },

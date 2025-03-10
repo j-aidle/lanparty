@@ -27,105 +27,105 @@ if (!function_exists('initialize_partners')) {
             'name' => 'Ajuntament de Tortosa',
             'category' => 'Or',
             'session' => $session,
-            'avatar' => '/img/logos/Ajuntament.jpg'
+            'avatar' => 'public/img/logos/Ajuntament.jpg'
         ]);
 
         Partner::firstOrCreate([
             'name' => 'Beep',
             'category' => 'Or',
             'session' => $session,
-            'avatar' => '/img/logos/BEEP.jpg'
+            'avatar' => 'public/img/logos/BEEP.jpg'
         ]);
 
         Partner::firstOrCreate([
             'name' => 'The Workshop',
             'category' => 'Or',
             'session' => $session,
-            'avatar' => '/img/logos/TheWorkshop.jpg'
+            'avatar' => 'public/img/logos/TheWorkshop.jpg'
         ]);
 
         Partner::firstOrCreate([
             'name' => 'PC Serveis',
             'category' => 'Plata',
             'session' => $session,
-            'avatar' => '/img/logos/PCServeis.jpg'
+            'avatar' => 'public/img/logos/PCServeis.jpg'
         ]);
 
         Partner::firstOrCreate([
             'name' => 'DISI',
             'category' => 'Plata',
             'session' => $session,
-            'avatar' => '/img/logos/Disi.jpg'
+            'avatar' => 'public/img/logos/Disi.jpg'
         ]);
 
         Partner::firstOrCreate([
             'name' => 'AGI',
             'category' => 'Plata',
             'session' => $session,
-            'avatar' => '/img/logos/AGI.jpg'
+            'avatar' => 'public/img/logos/AGI.jpg'
         ]);
 
         Partner::firstOrCreate([
             'name' => 'EPorts',
             'category' => 'Plata',
             'session' => $session,
-            'avatar' => '/img/logos/ePorts.jpg'
+            'avatar' => 'public/img/logos/ePorts.jpg'
         ]);
 
         Partner::firstOrCreate([
             'name' => 'SecurityPla',
             'category' => 'Plata',
             'session' => $session,
-            'avatar' => '/img/logos/SecurityPla.jpg'
+            'avatar' => 'public/img/logos/SecurityPla.jpg'
         ]);
 
         Partner::firstOrCreate([
             'name' => 'Altercom 21',
             'category' => 'Bronze',
             'session' => $session,
-            'avatar' => '/img/logos/Altercom.jpg'
+            'avatar' => 'public/img/logos/Altercom.jpg'
         ]);
 
         Partner::firstOrCreate([
             'name' => 'Globals',
             'category' => 'Bronze',
             'session' => $session,
-            'avatar' => '/img/logos/Globals.jpg'
+            'avatar' => 'public/img/logos/Globals.jpg'
         ]);
 
         Partner::firstOrCreate([
             'name' => 'Ferreteria Garcia',
             'category' => 'Bronze',
             'session' => $session,
-            'avatar' => '/img/logos/FerreteriaGarcia.png'
+            'avatar' => 'public/img/logos/FerreteriaGarcia.png'
         ]);
 
         Partner::firstOrCreate([
             'name' => 'Jabil',
             'category' => 'Bronze',
             'session' => $session,
-            'avatar' => '/img/logos/Jabil.jpg'
+            'avatar' => 'public/img/logos/Jabil.jpg'
         ]);
 
         Partner::firstOrCreate([
             'name' => 'Querol',
             'category' => 'Bronze',
             'session' => $session,
-            'avatar' => '/img/logos/Querol.jpg'
+            'avatar' => 'public/img/logos/Querol.jpg'
         ]);
 
         Partner::firstOrCreate([
             'name' => 'Electrotic',
             'category' => 'Bronze',
             'session' => $session,
-            'avatar' => '/img/logos/Electrotic.jpg'
+            'avatar' => 'public/img/logos/Electrotic.jpg'
         ]);
 
         Partner::firstOrCreate([
             'name' => "Departament d'informàtica",
             'category' => 'Or',
             'session' => $session,
-            'avatar' => '/img/logos/DepartamentInformatica.jpg'
+            'avatar' => 'public/img/logos/DepartamentInformatica.jpg'
         ]);
 
     }
@@ -491,7 +491,7 @@ if (!function_exists('create_events')) {
             [
               'name' => 'League Of Legends',
               'inscription_type' => 'group',
-              'image' => '/img/LoL.jpeg',
+              'image' => 'public/img/LoL.jpeg',
               'tickets' => 10, // Número de grups,
               'participants_number' => 5,
               'regulation' => 'https://docs.google.com/document/d/1lO-twh_U-wGS7jNQJu_B6yhqq-E5RbQacOX-3AiRZmA/edit',
@@ -500,7 +500,7 @@ if (!function_exists('create_events')) {
             [
               'name' => 'Valorant',
               'inscription_type' => 'group',
-              'image' => '/img/Valorant.png',
+              'image' => 'public/img/Valorant.png',
               'tickets' => 10, // Número de grups,
               'participants_number' => 5,
               'regulation' => 'https://docs.google.com/document/d/1lO-twh_U-wGS7jNQJu_B6yhqq-E5RbQacOX-3AiRZmA/edit',
@@ -509,7 +509,7 @@ if (!function_exists('create_events')) {
             [
               'name' => 'Counter Strike',
               'inscription_type' => 'group',
-              'image' => '/img/CounterStrike.jpeg',
+              'image' => 'public/img/CounterStrike.jpeg',
               'tickets' => 10, // Número d'usuaris es poden inscriure
               'participants_number' => 5,
               'regulation' => 'https://docs.google.com/document/d/1ZMUBSAYHz79JSWkbv9Ra0HLfO2WGJHkLW6xDYHa4Pks/edit',
@@ -519,7 +519,7 @@ if (!function_exists('create_events')) {
             [
               'name' => 'Fortnite',
               'inscription_type' => 'group',
-              'image' => '/img/Fortnite.png',
+              'image' => 'public/img/Fortnite.png',
               'tickets' => 200, // Número d'usuaris es poden inscriure
               'participants_number' => 1,
               'regulation' => 'https://docs.google.com/document/d/1OlM3ZcxyxiIz51R_tYeYiA1-lfiK-lyG-tMhRm8DHSk/edit',
@@ -528,7 +528,7 @@ if (!function_exists('create_events')) {
             // [
             //     'name' => 'Overwatch',
             //     'inscription_type' => 'group',
-            //     'image' => '/img/Overwatch.jpeg',
+            //     'image' => 'public/img/Overwatch.jpeg',
             //     'tickets' => 10, // Número de grups
             //     'participants_number' => 6,
             //     'regulation' => 'https://docs.google.com/document/d/1OlM3ZcxyxiIz51R_tYeYiA1-lfiK-lyG-tMhRm8DHSk/edit',
@@ -537,7 +537,7 @@ if (!function_exists('create_events')) {
             // [
             //     'name' => 'Age Of empires',
             //     'inscription_type' => 'individual',
-            //     'image' => '/img/AgeOfEmpires2.png',
+            //     'image' => 'public/img/AgeOfEmpires2.png',
             //     'tickets' => 15, // Número d'usuaris es poden inscriure
             //     'regulation' => 'https://docs.google.com/document/d/1YDxnnqIt_Wixy5itQoHWT5-n37G5-I2TY0oHzdPscWM/edit',
             //     'participants_number' => null,
@@ -546,7 +546,7 @@ if (!function_exists('create_events')) {
             // [
             //     'name' => 'Muntatge equips ESBORRANY',
             //     'inscription_type' => 'individual',
-            //     'image' => '/img/Fifa18.jpeg',
+            //     'image' => 'public/img/Fifa18.jpeg',
             //     'tickets' => 15, // Número d'usuaris es poden inscriure
             //     'regulation' => 'https://docs.google.com/document/d/15M_Acf3hBp0E7k2bCB8LwJV1ZZuiXx0B_w4SEZtY5DA/edit',
             //     'participants_number' => null,
@@ -555,7 +555,7 @@ if (!function_exists('create_events')) {
             // [
             //     'name' => 'FIFA 18',
             //     'inscription_type' => 'individual',
-            //     'image' => '/img/Fifa18.jpeg',
+            //     'image' => 'public/img/Fifa18.jpeg',
             //     'tickets' => 15, // Número d'usuaris es poden inscriure
             //     'regulation' => 'https://docs.google.com/document/d/1YDxnnqIt_Wixy5itQoHWT5-n37G5-I2TY0oHzdPscWM/edit',
             //     'participants_number' => null,
@@ -564,7 +564,7 @@ if (!function_exists('create_events')) {
             // [
             //     'name' => 'Capture The Flag',
             //     'inscription_type' => 'group',
-            //     'image' => '/img/CaptureTheFlag.jpeg',
+            //     'image' => 'public/img/CaptureTheFlag.jpeg',
             //     'tickets' => 20, // Número d'usuaris es poden inscriure
             //     'regulation' => 'https://docs.google.com/document/d/1YDxnnqIt_Wixy5itQoHWT5-n37G5-I2TY0oHzdPscWM/edit',
             //     'participants_number' => 3,
@@ -573,7 +573,7 @@ if (!function_exists('create_events')) {
             // [
             //     'name' => 'Event archivat',
             //     'inscription_type' => 'individual',
-            //     'image' => '/img/Fifa18.jpeg',
+            //     'image' => 'public/img/Fifa18.jpeg',
             //     'tickets' => 20, // Número d'usuaris es poden inscriure
             //     'regulation' => 'https://docs.google.com/document/d/1YDxnnqIt_Wixy5itQoHWT5-n37G5-I2TY0oHzdPscWM/edit',
             //     'participants_number' => null,
@@ -606,7 +606,7 @@ if (!function_exists('create_events_2019')) {
               'name' => 'League Of Legends',
               'session' => '2019',
               'inscription_type' => 'group',
-              'image' => '/img/LoL.jpeg',
+              'image' => 'public/img/LoL.jpeg',
               'tickets' => 25, // Número de grups,
               'participants_number' => 5,
               'regulation' => 'https://drive.google.com/open?id=1ngi-LN20BYe6tkvIOQfWeEq7UJSfY_oZ',
@@ -616,7 +616,7 @@ if (!function_exists('create_events_2019')) {
               'name' => 'Overwatch',
               'session' => '2019',
               'inscription_type' => 'group',
-              'image' => '/img/Overwatch.jpeg',
+              'image' => 'public/img/Overwatch.jpeg',
               'tickets' => 15, // Número de grups
               'participants_number' => 6,
               'regulation' => 'https://drive.google.com/open?id=19p7BYETZjk_lFf7WS1ruITVrTF8RsKT6',
@@ -626,7 +626,7 @@ if (!function_exists('create_events_2019')) {
               'name' => 'Counter Strike GO',
               'session' => '2019',
               'inscription_type' => 'group',
-              'image' => '/img/CounterStrike.jpeg',
+              'image' => 'public/img/CounterStrike.jpeg',
               'tickets' => 25, // Número de grups
               'participants_number' => 3,
               'regulation' => 'https://drive.google.com/open?id=1w_IZlY_udxGlIIm-KsY2KfnBC96EmfsD',
@@ -637,7 +637,7 @@ if (!function_exists('create_events_2019')) {
               'name' => 'Capture The Flag',
               'session' => '2019',
               'inscription_type' => 'group',
-              'image' => '/img/CaptureTheFlag.jpeg',
+              'image' => 'public/img/CaptureTheFlag.jpeg',
               'tickets' => 8, // Número de grups
               'participants_number' => 3,
               'regulation' => 'https://drive.google.com/open?id=18G315NKo6bPSJredIt_A7LJMdfpOHa4j',
@@ -647,7 +647,7 @@ if (!function_exists('create_events_2019')) {
               'name' => 'FIFA 19',
               'session' => '2019',
               'inscription_type' => 'individual',
-              'image' => '/img/Fifa18.jpeg',
+              'image' => 'public/img/Fifa18.jpeg',
               'tickets' => 32, // Número d'usuaris es poden inscriure
               'regulation' => 'https://drive.google.com/open?id=1ED-Ui5zMLEU7KvYwUuf5umFvVAP8OupP',
               'participants_number' => null,
@@ -657,7 +657,7 @@ if (!function_exists('create_events_2019')) {
               'name' => 'Programació Python-JavaScript',
               'session' => '2019',
               'inscription_type' => 'individual',
-              'image' => '/img/code.jpeg',
+              'image' => 'public/img/code.jpeg',
               'tickets' => 20, // Número d'usuaris es poden inscriure
               'regulation' => 'https://drive.google.com/open?id=1V8kBbF-Jg-gBH6mdevjzbp5ljL6QhH42',
               'participants_number' => null,
@@ -1096,103 +1096,103 @@ if (!function_exists('create_flags_2019')) {
                     'name' => 'Ajuntament de Tortosa',
                     'session' => '2019',
                     'category' => null,
-                    'avatar' => '/img/logos/Ajuntament.jpg'
+                    'avatar' => 'public/img/logos/Ajuntament.jpg'
                 ]);
                 Partner::firstOrCreate([
                     'name' => 'Dep. Informatica Institut de l\'Ebre',
                     'session' => '2019',
                     'category' => null,
-                    'avatar' => '/img/logos/iesEbre.jpg'
+                    'avatar' => 'public/img/logos/iesEbre.jpg'
                 ]);
                 Partner::firstOrCreate([
                     'name' => 'AGI(EbreSoft Consulting)',
                     'session' => '2019',
                     'category' => null,
-                    'avatar' => '/img/logos/AGI.jpg'
+                    'avatar' => 'public/img/logos/AGI.jpg'
                 ]);
                 Partner::firstOrCreate([
                     'name' => 'Altercom21',
                     'session' => '2019',
                     'category' => null,
-                    'avatar' => '/img/logos/Altercom.jpg'
+                    'avatar' => 'public/img/logos/Altercom.jpg'
                 ]);
                 Partner::firstOrCreate([
                     'name' => 'BEEP',
                     'session' => '2019',
                     'category' => null,
-                    'avatar' => '/img/logos/BEEP.jpg'
+                    'avatar' => 'public/img/logos/BEEP.jpg'
                 ]);
                 Partner::firstOrCreate([
                     'name' => 'Alonso - Delta Stocks',
                     'session' => '2019',
                     'category' => null,
-                    'avatar' => '/img/logos/Alonso.jpg'
+                    'avatar' => 'public/img/logos/Alonso.jpg'
                 ]);
                 Partner::firstOrCreate([
                     'name' => 'Disi',
                     'session' => '2019',
                     'category' => null,
-                    'avatar' => '/img/logos/Disi.jpg'
+                    'avatar' => 'public/img/logos/Disi.jpg'
                 ]);
                 Partner::firstOrCreate([
                       'name' => 'ePorts',
                       'session' => '2019',
                       'category' => null,
-                      'avatar' => '/img/logos/ePorts.jpg'
+                      'avatar' => 'public/img/logos/ePorts.jpg'
                 ]);
                 Partner::firstOrCreate([
                       'name' => 'Fusteria Almendros',
                       'session' => '2019',
                       'category' => null,
-                      'avatar' => '/img/logos/Almendros.jpg'
+                      'avatar' => 'public/img/logos/Almendros.jpg'
                 ]);
                 Partner::firstOrCreate([
                       'name' => 'Globals',
                       'session' => '2019',
                       'category' => null,
-                      'avatar' => '/img/logos/Globals.jpg'
+                      'avatar' => 'public/img/logos/Globals.jpg'
                 ]);
                 Partner::firstOrCreate([
                       'name' => 'Guerra Informàtica',
                       'session' => '2019',
                       'category' => null,
-                      'avatar' => '/img/logos/Guerra.jpg'
+                      'avatar' => 'public/img/logos/Guerra.jpg'
                 ]);
                 Partner::firstOrCreate([
                       'name' => 'Jabil',
                       'session' => '2019',
                       'category' => null,
-                      'avatar' => '/img/logos/Jabil.jpg'
+                      'avatar' => 'public/img/logos/Jabil.jpg'
                 ]);
                 Partner::firstOrCreate([
                       'name' => 'PC Serveis',
                       'session' => '2019',
                       'category' => null,
-                      'avatar' => '/img/logos/PcServeis.jpg'
+                      'avatar' => 'public/img/logos/PcServeis.jpg'
                 ]);
                 Partner::firstOrCreate([
                       'name' => 'Querol',
                       'session' => '2019',
                       'category' => null,
-                      'avatar' => '/img/logos/Querol.jpg'
+                      'avatar' => 'public/img/logos/Querol.jpg'
                 ]);
                 Partner::firstOrCreate([
                       'name' => 'Recycling Systems',
                       'session' => '2019',
                       'category' => null,
-                      'avatar' => '/img/logos/RecyclingSystem.jpg'
+                      'avatar' => 'public/img/logos/RecyclingSystem.jpg'
                 ]);
                 Partner::firstOrCreate([
                       'name' => 'Security Pla',
                       'session' => '2019',
                       'category' => null,
-                      'avatar' => '/img/logos/SecurityPla.jpg'
+                      'avatar' => 'public/img/logos/SecurityPla.jpg'
                 ]);
                 Partner::firstOrCreate([
                       'name' => 'Bar de Tomàs',
                       'session' => '2019',
                       'category' => null,
-                      'avatar' => '/img/logos/Tomas.jpg'
+                      'avatar' => 'public/img/logos/Tomas.jpg'
                 ]);
             }
           }

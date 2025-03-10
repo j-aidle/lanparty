@@ -27,7 +27,7 @@
 
 <script>
 import interactsWithGravatar from '../mixins/interactsWithGravatar'
-import EventBus from '../../eventBus'
+import EventBus from '../../app'
 
 export default {
   name: 'AndTheWinnerIs',

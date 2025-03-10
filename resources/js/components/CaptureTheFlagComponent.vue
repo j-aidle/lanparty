@@ -25,8 +25,8 @@
                   <td>{{ props.item.points }}</td>
                   <td><a :href="'/ctfGroup/' +props.item.id">{{ props.item.name }}</a></td>
                   <td v-for="flag in props.item.flags">
-                      <img v-if="flag==true" src="/img/green.png" class="flagImg">
-                      <img v-else src="/img/red.png" class="flagImg">
+                      <img v-if="flag==true" src="public/img/green.png" class="flagImg">
+                      <img v-else src="public/img/red.png" class="flagImg">
                   </td>
                 </tr>
               </template>

@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import PrizeUpdateForm from './PrizeUpdateForm'
+import PrizeUpdateForm from './PrizeUpdateForm.vue'
 export default {
   name: 'PrizeUpdate',
   components: {

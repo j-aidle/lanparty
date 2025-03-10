@@ -24,7 +24,7 @@
     <meta property="og:title" content="LAN PARTY Institut de l'Ebre" />
     <meta property="subtitle" content="La LAN Party de les Terres de l'Ebre" />
     <meta property="og:url" content="https://registre.lanparty.iesebre.com" />
-    <meta property="og:image" content="https://registre.lanparty.iesebre.com/img/logo512x512.png" />
+    <meta property="og:image" content="https://registre.lanparty.iesebre.compublic/img/logo512x512.png" />
     <meta property="og:sitename" content="registre.lanparty.iesebre.com" />
     <meta property="og:url" content="https://registre.lanparty.iesebre.com" />
 
@@ -39,12 +39,16 @@
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#2680C2"/>
 
-    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
 
     {{--<script defer src="{{ mix('/tenant/js/manifest.js') }}" type="text/javascript"></script>--}}
     {{--<script defer src="{{ mix('/tenant/js/vendor.js') }}" type="text/javascript"></script>--}}
     {{--<script defer src="{{ mix('/tenant/js/app.js') }}" type="text/javascript"></script>--}}
+    @vite('resources/sass/app.scss')
+
 </head>
+<body>
+@vite('resources/js/app.js')
 <div id="app">
     <landing-page
             action="{{ $action ?? null }}"
@@ -55,38 +59,38 @@
             reset-password-email="{{ $email ?? null }}">
     </landing-page>
 </div>
-@stack('beforeScripts')
-<script src="{{ mix('js/app.js') }}"></script>
-@stack('afterScripts')
+<!-- @stack('beforeScripts')
+<script src="js/app.js"></script>
+@stack('afterScripts') -->
 <script>
-  function myMap() {
-    var mapCanvas = document.getElementById("googleMap");
-    var myCenter = new google.maps.LatLng(40.814757,0.515273);
-    var mapOptions = {center: myCenter, zoom: 17};
-    var map = new google.maps.Map(mapCanvas,mapOptions);
-    var marker = new google.maps.Marker({
-      position: myCenter,
-    });
-    var infowindow = new google.maps.InfoWindow({
-      content:"<h1>Institut de L'Ebre</h1>" +
-      "<ul><li>Av. de Cristòfol Colom, 34-42</li>" +
-      "<li>43500 Tortosa</li>" +
-      "<li>Tarragona</li>" +
-      "<li>Espanya</li></ul><a href=\"https://goo.gl/maps/rFCVoZJ1VCo\">Mostra a Google Maps</a>"
-    });
-    var open = false
-    google.maps.event.addListener(marker,'click',function() {
-      if (open) {
-        infowindow.close()
-        open = false
-      } else {
-        infowindow.open(map, marker)
-        open = true
-      }
-    });
-    marker.setMap(map);
-  }
+  // function myMap() {
+  //   var mapCanvas = document.getElementById("googleMap");
+  //   var myCenter = new google.maps.LatLng(40.814757,0.515273);
+  //   var mapOptions = {center: myCenter, zoom: 17};
+  //   var map = new google.maps.Map(mapCanvas,mapOptions);
+  //   var marker = new google.maps.Marker({
+  //     position: myCenter,
+  //   });
+  //   var infowindow = new google.maps.InfoWindow({
+  //     content:"<h1>Institut de L'Ebre</h1>" +
+  //     "<ul><li>Av. de Cristòfol Colom, 34-42</li>" +
+  //     "<li>43500 Tortosa</li>" +
+  //     "<li>Tarragona</li>" +
+  //     "<li>Espanya</li></ul><a href=\"https://goo.gl/maps/rFCVoZJ1VCo\">Mostra a Google Maps</a>"
+  //   });
+  //   var open = false
+  //   google.maps.event.addListener(marker,'click',function() {
+  //     if (open) {
+  //       infowindow.close()
+  //       open = false
+  //     } else {
+  //       infowindow.open(map, marker)
+  //       open = true
+  //     }
+  //   });
+  //   marker.setMap(map);
+  // }
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqFb5smTuq0qs5PTGv3NLy5Q9A6Wkmxhk&callback=myMap"></script>
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqFb5smTuq0qs5PTGv3NLy5Q9A6Wkmxhk&callback=myMap"></script> -->
 </body>
 </html>

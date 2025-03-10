@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import PrizesShowForm from './PrizesShowForm'
+import PrizesShowForm from './PrizesShowForm.vue'
 
 export default {
   name: 'PartnerShow',

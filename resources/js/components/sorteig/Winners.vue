@@ -33,8 +33,8 @@
 </template>
 
 <script>
-import RemoveAllWinners from './RemoveAllWinners'
-import RemoveWinnerDialog from './RemoveWinnerDialog'
+import RemoveAllWinners from './RemoveAllWinners.vue'
+import RemoveWinnerDialog from './RemoveWinnerDialog.vue'
 import interactsWithGravatar from '../mixins/interactsWithGravatar'
 import randomColor from '../mixins/randomColor'
 

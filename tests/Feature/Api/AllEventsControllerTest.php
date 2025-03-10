@@ -26,7 +26,7 @@ class AllEventsControllerTest extends TestCase
             [
                 'name' => 'League Of Legends',
                 'inscription_type' => 'group',
-                'image' => '/img/LoL.jpeg',
+                'image' => 'public/img/LoL.jpeg',
                 'tickets' => 10, // Número de grups,
                 'participants_number' => 5,
                 'regulation' => 'https://docs.google.com/document/d/1lO-twh_U-wGS7jNQJu_B6yhqq-E5RbQacOX-3AiRZmA/edit',
@@ -36,7 +36,7 @@ class AllEventsControllerTest extends TestCase
             [
                 'name' => 'Overwatch',
                 'inscription_type' => 'group',
-                'image' => '/img/Overwatch.jpeg',
+                'image' => 'public/img/Overwatch.jpeg',
                 'tickets' => 10, // Número de grups
                 'participants_number' => 6,
                 'regulation' => 'https://docs.google.com/document/d/1OlM3ZcxyxiIz51R_tYeYiA1-lfiK-lyG-tMhRm8DHSk/edit',
@@ -46,7 +46,7 @@ class AllEventsControllerTest extends TestCase
             [
                 'name' => 'Counter Strike',
                 'inscription_type' => 'group',
-                'image' => '/img/CounterStrike.jpeg',
+                'image' => 'public/img/CounterStrike.jpeg',
                 'tickets' => 10, // Número d'usuaris es poden inscriure
                 'participants_number' => 3,
                 'regulation' => 'https://docs.google.com/document/d/1ZMUBSAYHz79JSWkbv9Ra0HLfO2WGJHkLW6xDYHa4Pks/edit',
@@ -80,7 +80,7 @@ class AllEventsControllerTest extends TestCase
             [
                 'name' => 'League Of Legends',
                 'inscription_type' => 'group',
-                'image' => '/img/LoL.jpeg',
+                'image' => 'public/img/LoL.jpeg',
                 'tickets' => 10, // Número de grups,
                 'participants_number' => 5,
                 'regulation' => 'https://docs.google.com/document/d/1lO-twh_U-wGS7jNQJu_B6yhqq-E5RbQacOX-3AiRZmA/edit',
@@ -90,7 +90,7 @@ class AllEventsControllerTest extends TestCase
             [
                 'name' => 'Overwatch',
                 'inscription_type' => 'group',
-                'image' => '/img/Overwatch.jpeg',
+                'image' => 'public/img/Overwatch.jpeg',
                 'tickets' => 10, // Número de grups
                 'participants_number' => 6,
                 'regulation' => 'https://docs.google.com/document/d/1OlM3ZcxyxiIz51R_tYeYiA1-lfiK-lyG-tMhRm8DHSk/edit',
@@ -100,7 +100,7 @@ class AllEventsControllerTest extends TestCase
             [
                 'name' => 'Counter Strike',
                 'inscription_type' => 'group',
-                'image' => '/img/CounterStrike.jpeg',
+                'image' => 'public/img/CounterStrike.jpeg',
                 'tickets' => 10, // Número d'usuaris es poden inscriure
                 'participants_number' => 3,
                 'regulation' => 'https://docs.google.com/document/d/1ZMUBSAYHz79JSWkbv9Ra0HLfO2WGJHkLW6xDYHa4Pks/edit',

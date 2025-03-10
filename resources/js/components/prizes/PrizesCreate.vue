@@ -30,7 +30,7 @@
 </template>
 
 <script>
-  import PrizesCreateForm from './PrizesCreateForm'
+  import PrizesCreateForm from './PrizesCreateForm.vue'
 
   export default {
     name: 'PrizesCreate',

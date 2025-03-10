@@ -23,32 +23,32 @@
                                 <v-text-field readonly
                                               label="Id"
                                               :value="selectedUser.id"
-                                              readonly
+                                              
                                 ></v-text-field>
                                 <v-text-field readonly
                                               label="Email"
                                               :value="selectedUser.email"
-                                              readonly
+                                              
                                 ></v-text-field>
                                 <v-text-field readonly
                                               label="Nom usuari"
                                               :value="selectedUser.name"
-                                              readonly
+                                              
                                 ></v-text-field>
                                 <v-text-field readonly
                                               label="Nom"
                                               :value="selectedUser.givenName"
-                                              readonly
+                                              
                                 ></v-text-field>
                                 <v-text-field readonly
                                               label="1r cognom"
                                               :value="selectedUser.sn1"
-                                              readonly
+                                              
                                 ></v-text-field>
                                 <v-text-field readonly
                                               label="2n cognom"
                                               :value="selectedUser.sn2"
-                                              readonly
+                                              
                                 ></v-text-field>
                                 <v-text-field
                                         label="Data creació"
@@ -79,7 +79,7 @@
 </style>
 
 <script>
-  import { mapGetters } from 'vuex'
+  import { mapGetters } from 'pinia'
   import _ from 'lodash'
   import interactsWithGravatar from './mixins/interactsWithGravatar'
   import Gravatar from './GravatarComponent.vue'

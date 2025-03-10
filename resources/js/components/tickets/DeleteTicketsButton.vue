@@ -50,13 +50,13 @@
 </template>
 
 <script>
-  import { validationMixin } from 'vuelidate'
-  import { required, numeric } from 'vuelidate/lib/validators'
+import useVuelidate from '@vuelidate/core'; // Assegura't d'importar des de @vuelidate/core
+import { required, numeric } from '@vuelidate/validators';
+
   import * as actions from '../../store/action-types'
 
   export default {
     name: 'DeleteTicketsButton',
-    mixins: [validationMixin],
     validations: {
       quantity: { required, numeric }
     },

@@ -145,7 +145,7 @@ class UserTest extends TestCase
             'name' => 'FIFA 18',
             'session' => config('lanparty.session'),
             'inscription_type_id' => InscriptionType::where('value', 'individual')->first()->id,
-            'image' => '/img/Fifa18.jpeg',
+            'image' => 'public/img/Fifa18.jpeg',
             'regulation' => 'https://docs.google.com/document/d/1YDxnnqIt_Wixy5itQoHWT5-n37G5-I2TY0oHzdPscWM/edit',
             'published_at' => Carbon::now(),
             'participants_number' => 15
@@ -158,7 +158,7 @@ class UserTest extends TestCase
         $event2 = Event::firstOrCreate([
             'name' => 'Counter Strike',
             'inscription_type_id' => InscriptionType::where('value', 'group')->first()->id,
-            'image' => '/img/CounterStrike.jpeg',
+            'image' => 'public/img/CounterStrike.jpeg',
             'participants_number' => 3,
             'regulation' => 'https://docs.google.com/document/d/1ZMUBSAYHz79JSWkbv9Ra0HLfO2WGJHkLW6xDYHa4Pks/edit',
             'published_at' => '2018-01-15 12:00:00',

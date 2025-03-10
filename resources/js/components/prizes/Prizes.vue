@@ -11,8 +11,8 @@
 </template>
 
 <script>
-import EventBus from '../../eventBus'
-import PrizesSelect from '../prizes/PrizesSelect'
+import EventBus from '../../app'
+import PrizesSelect from '../prizes/PrizesSelect.vue'
 export default {
   name: 'Prizes',
   components: {

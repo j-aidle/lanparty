@@ -35,7 +35,7 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import { mapGetters } from 'pinia'
 import randomColor from '../mixins/randomColor'
 import AssignNumberToUser from './AssignNumberToUser'
 import UnAssignNumberToUser from './UnAssignNumberToUser'

@@ -40,7 +40,7 @@
                             <td class="text-xs-left">{{ props.item.tickets }}</td>
                             <td class="text-xs-left">{{ props.item.assigned_tickets }}</td>
                             <td class="text-xs-left">{{ props.item.available_tickets }}</td>
-                            <td class="text-xs-left"><a @click.stop="return;" :href="props.item.regulation" target="_blank">Reglament</a></td>
+                            <td class="text-xs-left"><a @click.stop :href="props.item.regulation" target="_blank">Reglament</a></td>
                             <td class="text-xs-right d-flex" >
                                 <v-progress-circular v-if="props.item.loading" indeterminate color="primary"></v-progress-circular>
                                 <v-switch v-else
@@ -116,8 +116,8 @@
 
                                 <v-list two-line v-else>
                                     <template v-if="props.item.users && props.item.users.length">
-                                        <template v-for="(user, index) in props.item.users">
-                                            <v-list-tile avatar :key="user.title" @click="">
+                                        <template v-for="(user, index) in props.item.users" :key="user.title">
+                                            <v-list-tile avatar  @click="">
                                                 <v-list-tile-avatar>
                                                     <img :src="gravatarURL(user.email)">
                                                 </v-list-tile-avatar>
@@ -196,7 +196,7 @@
                                             <div class="text-xs-left">Places: {{ props.item.tickets }}</div>
                                             <div class="text-xs-left">Inscrits: {{ props.item.assigned_tickets }}</div>
                                             <div class="text-xs-left">Disponibles: {{ props.item.available_tickets }}</div>
-                                            <div class="text-xs-left"><a @click.stop="return;" :href="props.item.regulation" target="_blank">Reglament</a></div>
+                                            <div class="text-xs-left"><a @click.stop :href="props.item.regulation" target="_blank">Reglament</a></div>
                                         </div>
                                     </v-flex>
                                     <v-flex xs5>
@@ -273,8 +273,8 @@
                                 <template v-else>
                                     <v-list two-line>
                                         <template v-if="props.item.users && props.item.users.length">
-                                            <template v-for="(user, index) in props.item.users">
-                                                <v-list-tile avatar :key="user.title" @click="">
+                                            <template v-for="(user, index) in props.item.users" :key="user.title" >
+                                                <v-list-tile avatar @click="">
                                                     <v-list-tile-avatar>
                                                         <img :src="gravatarURL(user.email)">
                                                     </v-list-tile-avatar>
@@ -312,7 +312,7 @@
   import Group from './GroupComponent.vue'
   import * as mutations from '../store/mutation-types'
   import * as actions from '../store/action-types'
-  import { mapGetters } from 'vuex'
+  import { mapGetters } from 'pinia'
 
   const GROUP = 1
 
@@ -373,7 +373,7 @@
       editGroupRegistration () {
         this.avoidExpand = true
         this.showInscribeToGroupEvent = true
-        // TODO Vuex store: logged user with groups is member. Use this data to fill fields on Group REgistration Form
+        // TODO pinia store: logged user with groups is member. Use this data to fill fields on Group REgistration Form
       },
       closeRegisterGroupDialog () {
         this.showInscribeToGroupEvent = false

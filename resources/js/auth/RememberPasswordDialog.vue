@@ -51,12 +51,11 @@
 <script>
 import * as actions from '../store/action-types'
 import sleep from '../utils/sleep'
-import { validationMixin } from 'vuelidate'
-import { required, email } from 'vuelidate/lib/validators'
+import useVuelidate from '@vuelidate/core';
+import { required, email } from '@vuelidate/validators';
 
 export default {
   name: 'RememberPasswordDialog',
-  mixins: [validationMixin],
   validations: {
     email: { required, email }
   },

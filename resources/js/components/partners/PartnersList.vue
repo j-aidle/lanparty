@@ -68,11 +68,11 @@
 </template>
 
 <script>
-import PartnerShow from './PartnerShow'
-import PartnerDestroy from './PartnerDestroy'
-import PartnerUpdate from './PartnerUpdate'
-import PartnerAvatar from './PartnerAvatar'
-import PartnerEditNameInline from './PartnerEditNameInline'
+import PartnerShow from './PartnerShow.vue'
+import PartnerDestroy from './PartnerDestroy.vue'
+import PartnerUpdate from './PartnerUpdate.vue'
+import PartnerAvatar from './PartnerAvatar.vue'
+import PartnerEditNameInline from './PartnerEditNameInline.vue'
 
 export default {
   name: 'PartnersList',

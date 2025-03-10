@@ -64,9 +64,9 @@
 
 
 <script>
-  import PrizesDelete from "./PrizesDelete"
-  import PrizesUpdate from "./PrizesUpdate"
-  import PrizesShow from "./PrizesShow"
+  import PrizesDelete from "./PrizesDelete.vue"
+  import PrizesUpdate from "./PrizesUpdate.vue"
+  import PrizesShow from "./PrizesShow.vue"
 
   export default {
     name: 'PrizesManage',

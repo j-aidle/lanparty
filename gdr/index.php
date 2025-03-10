@@ -115,7 +115,7 @@ function main(){
 /*
 CODI EXTRA
 */
-		setHint('<div id="resultat"><p style="color:#ffffff;"> Buscant... <br></p> <img src="loading.gif" height="75" width="75"></img></div> ');
+		setHint('<div id="resultat"><p style="color:#ffffff;"> Buscant... <br></p> <img src="loading.gif" height="75" width="75"><public/img></div> ');
 		
 		setTimeout(function(){num(results[tirada])}, 10000);
 		//num(results[tirada]);

@@ -24,7 +24,7 @@
                             </v-alert>
                         </v-flex>
                         <v-flex xs4 offset-xs2 align-center>
-                            <img src="/img/404.jpg" alt="404 not found">
+                            <img src="public/img/404.jpg" alt="404 not found">
                         </v-flex>
                         <v-flex xs6 offset-xs5 align-center>
                             <v-btn outline color="primary" href="/home">Tornar a la pàgina principal</v-btn>

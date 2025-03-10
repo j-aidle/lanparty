@@ -49,7 +49,7 @@
                     <v-text-field readonly
                                   label="Created at"
                                   :value="user.formatted_created_at_date"
-                                  readonly
+                                  
                     ></v-text-field>
                 </v-form>
             </v-card-text>

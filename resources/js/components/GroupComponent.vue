@@ -79,10 +79,13 @@
 
 <script>
   import VUsersSearch from './VUsersSearchComponent.vue'
-  import { mapGetters } from 'vuex'
+  import useStore from '../registrationStore';
   import * as actions from '../store/action-types'
   import interactsWithGravatar from './mixins/interactsWithGravatar'
   import sleep from '../utils/sleep'
+
+  const store = useStore();
+  const { user } = storeToRefs(store);  
 
   export default {
     name: 'Group',
@@ -108,11 +111,6 @@
         filePath: 'img/groupPlaceholder.jpg',
         dragging: false
       }
-    },
-    computed: {
-      ...mapGetters({
-        user: 'user'
-      })
     },
     props: {
       dialog: {

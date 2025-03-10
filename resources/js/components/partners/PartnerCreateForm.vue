@@ -55,12 +55,12 @@
 </template>
 
 <script>
-import { validationMixin } from 'vuelidate'
-import { required } from 'vuelidate/lib/validators'
+import useVuelidate from '@vuelidate/core'; // Assegura't d'importar des de @vuelidate/core
+import { required } from '@vuelidate/validators';
+
 import SessionSelect from '../SessionSelect'
 
 export default {
-  mixins: [validationMixin],
   validations: {
     name: { required },
     session: { required }

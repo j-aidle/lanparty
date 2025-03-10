@@ -24,7 +24,7 @@ class ArchivedEventsControllerTest extends TestCase
         $event = Event::create([
             'name' => 'League Of Legends',
             'inscription_type_id' => InscriptionType::where('value','group')->first()->id,
-            'image' => '/img/LoL.jpeg',
+            'image' => 'public/img/LoL.jpeg',
             'participants_number' => 5,
             'regulation' => 'https://docs.google.com/document/d/1lO-twh_U-wGS7jNQJu_B6yhqq-E5RbQacOX-3AiRZmA/edit',
             'published_at' => '2018-01-15 12:00:00'
@@ -44,7 +44,7 @@ class ArchivedEventsControllerTest extends TestCase
         $event = Event::create([
             'name' => 'League Of Legends',
             'inscription_type_id' => InscriptionType::where('value','group')->first()->id,
-            'image' => '/img/LoL.jpeg',
+            'image' => 'public/img/LoL.jpeg',
             'participants_number' => 5,
             'regulation' => 'https://docs.google.com/document/d/1lO-twh_U-wGS7jNQJu_B6yhqq-E5RbQacOX-3AiRZmA/edit',
             'published_at' => '2018-01-15 12:00:00'
@@ -64,7 +64,7 @@ class ArchivedEventsControllerTest extends TestCase
         $event = Event::create([
             'name' => 'League Of Legends',
             'inscription_type_id' => InscriptionType::where('value','group')->first()->id,
-            'image' => '/img/LoL.jpeg',
+            'image' => 'public/img/LoL.jpeg',
             'participants_number' => 5,
             'regulation' => 'https://docs.google.com/document/d/1lO-twh_U-wGS7jNQJu_B6yhqq-E5RbQacOX-3AiRZmA/edit',
             'published_at' => '2018-01-15 12:00:00'
@@ -82,7 +82,7 @@ class ArchivedEventsControllerTest extends TestCase
         $event = Event::create([
             'name' => 'League Of Legends',
             'inscription_type_id' => InscriptionType::where('value','group')->first()->id,
-            'image' => '/img/LoL.jpeg',
+            'image' => 'public/img/LoL.jpeg',
             'participants_number' => 5,
             'regulation' => 'https://docs.google.com/document/d/1lO-twh_U-wGS7jNQJu_B6yhqq-E5RbQacOX-3AiRZmA/edit',
             'published_at' => '2018-01-15 12:00:00'
@@ -99,7 +99,7 @@ class ArchivedEventsControllerTest extends TestCase
         $event = Event::create([
             'name' => 'League Of Legends',
             'inscription_type_id' => InscriptionType::where('value','group')->first()->id,
-            'image' => '/img/LoL.jpeg',
+            'image' => 'public/img/LoL.jpeg',
             'participants_number' => 5,
             'regulation' => 'https://docs.google.com/document/d/1lO-twh_U-wGS7jNQJu_B6yhqq-E5RbQacOX-3AiRZmA/edit',
             'published_at' => '2018-01-15 12:00:00'
@@ -120,7 +120,7 @@ class ArchivedEventsControllerTest extends TestCase
         $event = Event::create([
             'name' => 'League Of Legends',
             'inscription_type_id' => InscriptionType::where('value','group')->first()->id,
-            'image' => '/img/LoL.jpeg',
+            'image' => 'public/img/LoL.jpeg',
             'participants_number' => 5,
             'regulation' => 'https://docs.google.com/document/d/1lO-twh_U-wGS7jNQJu_B6yhqq-E5RbQacOX-3AiRZmA/edit',
             'published_at' => '2018-01-15 12:00:00'
@@ -141,7 +141,7 @@ class ArchivedEventsControllerTest extends TestCase
         $event = Event::create([
             'name' => 'League Of Legends',
             'inscription_type_id' => InscriptionType::where('value','group')->first()->id,
-            'image' => '/img/LoL.jpeg',
+            'image' => 'public/img/LoL.jpeg',
             'participants_number' => 5,
             'regulation' => 'https://docs.google.com/document/d/1lO-twh_U-wGS7jNQJu_B6yhqq-E5RbQacOX-3AiRZmA/edit',
             'published_at' => '2018-01-15 12:00:00'
@@ -160,7 +160,7 @@ class ArchivedEventsControllerTest extends TestCase
         $event = Event::create([
             'name' => 'League Of Legends',
             'inscription_type_id' => InscriptionType::where('value','group')->first()->id,
-            'image' => '/img/LoL.jpeg',
+            'image' => 'public/img/LoL.jpeg',
             'participants_number' => 5,
             'regulation' => 'https://docs.google.com/document/d/1lO-twh_U-wGS7jNQJu_B6yhqq-E5RbQacOX-3AiRZmA/edit',
             'published_at' => '2018-01-15 12:00:00'

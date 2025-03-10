@@ -13,10 +13,10 @@ import { createApp } from 'vue';
  * to use in your application's views. An example is included for you.
  */
 
-const app = createApp({});
+const app = createApp();
 
-import ExampleComponent from './components/ExampleComponent.vue';
-app.component('example-component', ExampleComponent);
+//import ExampleComponent from './components/ExampleComponent.vue';
+//app.component('example-component', ExampleComponent);
 
 /**
  * The following block of code may be used to automatically register your
@@ -36,4 +36,26 @@ app.component('example-component', ExampleComponent);
  * scaffolding. Otherwise, you will need to add an element yourself.
  */
 
-app.mount('#app');
+// Registra automàticament tots els components dins del directori components
+const files = import.meta.glob('./components/**/*.vue', { eager: true });
+
+
+
+const eventBus = app.config.globalProperties;
+export default eventBus;
+
+
+
+//initialize pinia
+const pinia = createPinia()
+
+
+app.use(pinia).mount('#app');
+
+Object.entries(files).forEach(([path, definition]) => {
+    const componentName = path.split('/').pop().replace(/\.\w+$/, '');
+    app.component(componentName, definition.default);
+});
+
+import useStore from './registrationStore';
+

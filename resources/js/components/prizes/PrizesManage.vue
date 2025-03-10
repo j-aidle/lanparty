@@ -9,8 +9,8 @@
     </v-container>
 </template>
 <script>
-  import PrizesList from './PrizesList'
-  import PrizesCreate from './PrizesCreate'
+  import PrizesList from './PrizesList.vue'
+  import PrizesCreate from './PrizesCreate.vue'
   export default {
     name: 'PrizesManage',
     data () {

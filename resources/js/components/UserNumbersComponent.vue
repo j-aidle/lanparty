@@ -23,7 +23,7 @@
 </style>
 
 <script>
-  import { mapGetters } from 'vuex'
+  import { mapGetters } from 'pinia'
   import randomColor from './mixins/randomColor'
 
   export default {

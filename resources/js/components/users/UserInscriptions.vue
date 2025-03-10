@@ -62,10 +62,10 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import { mapGetters } from 'pinia'
 import * as actions from '../../store/action-types'
-import UnregisterUserFromAllEvents from '../users/UnregisterUserFromAllEvents'
-import RegisterUserToEvent from '../users/RegisterUserToEvent'
+import UnregisterUserFromAllEvents from './UnregisterUserFromAllEvents.vue'
+import RegisterUserToEvent from '../users/RegisterUserToEvent.vue'
 export default {
   name: 'UserInscriptions',
   components: {

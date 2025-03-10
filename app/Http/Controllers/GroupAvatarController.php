@@ -25,7 +25,7 @@ class GroupAvatarController extends Controller
         if ($group->avatar && Storage::exists($group->avatar)) {
             return response()->file(Storage::path($group->avatar));
         }
-        return response()->file(public_path('/img/groupPlaceholder.jpg'));
+        return response()->file(public_path('public/img/groupPlaceholder.jpg'));
     }
 
     /**

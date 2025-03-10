@@ -50,11 +50,11 @@
 </style>
 
 <script>
-  import SessionSelect from '../SessionSelect'
-  import Winners from './Winners'
-  import Prizes from '../prizes/Prizes'
-  import AndTheWinnerIs from './AndTheWinnerIs'
-  import EventBus from '../../eventBus'
+  import SessionSelect from '../SessionSelect.vue'
+  import Winners from './Winners.vue'
+  import Prizes from '../prizes/Prizes.vue'
+  import AndTheWinnerIs from './AndTheWinnerIs.vue'
+  import EventBus from '../../app'
   import helpers from '../../utils/helpers'
 
   export default {

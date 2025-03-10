@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import UsersList from './UsersList'
+import UsersList from './UsersList.vue'
 export default {
   name: 'UsersManage',
   components: {

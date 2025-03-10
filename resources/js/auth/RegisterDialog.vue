@@ -109,7 +109,7 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import { mapGetters } from 'pinia'
 import * as actions from '../store/action-types'
 
 export default {

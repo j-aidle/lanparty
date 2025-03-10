@@ -24,7 +24,7 @@
 <script>
 import sleep from '../../utils/sleep'
 import * as actions from '../../store/action-types'
-import { mapGetters } from 'vuex'
+import { mapGetters } from 'pinia'
 
 export default {
   name: 'UnregisterUserFromAllEvents',

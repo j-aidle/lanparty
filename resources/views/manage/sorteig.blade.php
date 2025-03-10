@@ -11,7 +11,7 @@
     <meta property="og:title" content="LAN PARTY Institut de l'Ebre. Sorteig" />
     <meta property="subtitle" content="La LAN Party de les Terres de l'Ebre" />
     <meta property="og:url" content="https://registre.lanparty.iesebre.com" />
-    <meta property="og:image" content="https://registre.lanparty.iesebre.com/img/logo512x512.png" />
+    <meta property="og:image" content="https://registre.lanparty.iesebre.compublic/img/logo512x512.png" />
     <meta property="og:sitename" content="registre.lanparty.iesebre.com" />
     <meta property="og:url" content="https://registre.lanparty.iesebre.com" />
 

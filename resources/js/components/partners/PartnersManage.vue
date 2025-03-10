@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import PartnersList from './PartnersList'
-import PartnerCreate from './PartnerCreate'
+import PartnersList from './PartnersList.vue'
+import PartnerCreate from './PartnerCreate.vue'
 
 export default {
   name: 'PartnersManage',

@@ -28,14 +28,13 @@
 </template>
 <script>
 
-import { validationMixin } from 'vuelidate'
-import SessionSelect from '../SessionSelect'
+import useVuelidate from '@vuelidate/core'; // Assegura't d'importar des de @vuelidate/core
+import { required } from '@vuelidate/validators';
+import SessionSelect from '../SessionSelect.vue'
 
-import { required } from 'vuelidate/lib/validators'
 
 export default {
   name: 'PrizeUpdateForm',
-  mixins: [validationMixin],
   validations: {
     name: { required },
     description: { required },
